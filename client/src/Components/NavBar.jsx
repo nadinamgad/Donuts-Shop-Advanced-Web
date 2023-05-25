@@ -1,32 +1,36 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import logo from "../assets/donut shop logo transparent.png"
+import "../Style/NavBar.css"
 
 function NavBar() {
   return (
-    <Navbar bg="light" expand="lg" className="ezayak">
+    <Navbar bg="light" expand="lg" className="navbar-container">
       <Container>
-        <Navbar.Brand href="#home">mustafa.w.marzouk@gmail.com</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Brand href="#home" className="logo-name">
+          <img src={logo} alt="Logo" className="logo-image" />
+          Donutopia
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
-                خبره 10 سنين في مطابع الزفت
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="#home" className="nav-link">
+              Home
+            </Nav.Link>
+            <Nav.Link href="#link" className="nav-link">
+              Order
+            </Nav.Link>
+            <Nav.Link href="#link" className="nav-link">
+              About
+            </Nav.Link>
+            <Nav.Link href="#link" className="nav-link">
+              Review
+            </Nav.Link>
+            <Nav.Link href="#link" className="nav-link">
+              Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
