@@ -1,16 +1,12 @@
-import './App.css'
-import {Route, Routes} from "react-router-dom";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import IndexPage from "./Components/indexPage";
 // import NavBar from './Components/NavBar.jsx';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import BasicExample from './Components/Navbar';
 
 function App() {
   return (
     <Routes>
-      <Route index element={<BasicExample/>}/>
+      <Route index element={<IndexPage />} />
     </Routes>
 
     // <div>

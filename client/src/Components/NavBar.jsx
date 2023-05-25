@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-function BasicExample() {
+function NavBar() {
   return (
     <Navbar bg="light" expand="lg" className="ezayak">
       <Container>
@@ -15,7 +15,9 @@ function BasicExample() {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">
+                خبره 10 سنين في مطابع الزفت
+              </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
@@ -32,4 +34,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default NavBar;
