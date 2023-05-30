@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+.upper-half {
+    /* background-image: url(../assets/golddots.png); */
+    margin: 3rem;
+    align-items: center;
+}
+
+.side-img {
+    width: 130%;
+    height: auto;
+}
+
+.hook {
+    font-size: 300%;
+    
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+.lower-half {
+    background-image: url(../assets/2766.jpeg);
+}
+
+.madeforu {
+    color: #F4ACAC;
+    font-family: 'Anton', sans-serif;
+}
+
+.wlove {
+    font-family: 'Damion', cursive;
+
+}
+
+.lower-col1 {
+    justify-content: center;
+}
+.donutimg {
+    width: 90%;
+    height: 100%;
+}
+
+.up-img {
+    width: 100%;
+    height: 25rem;
+}
+
+
+
+h1 {
+  
+    /* text-shadow: 0 0 5px #cec74a, 0 0 15px #eaee87, 0 0 20px #faed8d, 0 0 40px #fffaae, 0 0 60px #fff700, 0 0 10px #ffef73, 0 0 98px #f6ff00;
+    color: #edeb52;
+    -webkit-animation: blink 12s infinite;
+    animation: blink 12s infinite; */
+
+}
+p {
+    background-color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}  
+
+.about-us-title {
+    background-color: white;
+}
+.neonText {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+    background: linear-gradient(45deg, #ffec00, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @keyframes neon-glow {
+    from {
+      text-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
+      
+    }
+    to {
+      text-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+      
+    }
+  }
+  
+/* .neonText {
+    color: #494444;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+
+    font-size: 6.2rem;
+    animation: pulsate 0.11s ease-in-out infinite alternate;  
+  } */
+
+  /* @keyframes pulsate {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(7, 15, 47),
+        0 0 80px rgb(10, 1, 116),
+        0 0 90px rgb(18, 6, 88),
+        0 0 100px rgb(4, 27, 78),
+        0 0 150px rgb(3, 14, 31);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px #f09,
+      0 0 73px #f09,
+      0 0 80px rgb(89, 0, 255),
+      0 0 94px rgb(13, 0, 255),
+      0 0 140px rgb(8, 0, 255);
+  
+  }
+} */
+

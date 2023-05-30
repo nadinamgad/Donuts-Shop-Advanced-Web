@@ -1,12 +1,17 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import IndexPage from "./Components/IndexPage";
+import AboutUs from "./Components/AboutUs";
+import Layout from "./Components/Layout";
+import Home from "./Components/Home";
 // import NavBar from './Components/NavBar.jsx';
 
 function App() {
   return (
     <Routes>
-      <Route index element={<IndexPage />} />
+      <Route path="/" element={<Layout/>}>
+        <Route index element={<Home />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+      </Route>
     </Routes>
 
     // <div>
