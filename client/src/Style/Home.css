@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+#gradient-text {
+    background: linear-gradient(to right, #F95D71, #422824);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+  }
+
+  #gradient-text2 {
+    background: linear-gradient(to left, #F95D71, #422824);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+  }
+
+.app__header__wrapper_info_text {
+  color: var(--brown);
+  
+  padding: 20px;
+}
+
+body {
+    background-image: linear-gradient(to right, rgba(58, 39, 85, 0.4), rgba(58, 39, 85, 0.2), rgba(255, 185, 185), rgb(255, 185, 185));
+
+}
+
+
+/* .text-row {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+} */
+
+.text-row h1 {
+margin: 0;
+/* font-family: 'Lobster', cursive; */
+font-weight: bolder;
+margin-top: 2rem;
+}
+
+.el_tetr {
+font-size: 7rem;
+
+}
+
+.sub-el-tetr {
+font-size: 5rem;
+}
+
+.order-now {
+font-family: 'Pacifico', cursive;
+font-size: 24px;
+background-color: var(--watermelon);
+color: var(--whitePink);
+border: none;
+padding: 10px 20px;
+margin-top: 3rem;
+cursor: pointer;
+/* text-transform: uppercase; */
+background-color: #422824;
+color: white;
+}
+
+.order-now:hover{
+    color: rgb(63, 10, 63);
+    background-color: white;
+    box-shadow: 0 0 5px rgb(63, 10, 63),
+     0 0 25px rgb(63, 10, 63),
+     0 0 50px rgb(63, 10, 63),
+     0 0 100px rgb(63, 10, 63),
+     0 0 200px rgb(63, 10, 63);
+  }
+
+

@@ -1,0 +1,34 @@
+.slider {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .slideshow-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    color: var(--brown);
+  }
+  
+  .slideshow {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .mainimg {
+    width: 300px; /* Adjust the width as per your preference */
+    height: 300px; /* Adjust the height to match the width */
+    object-fit: cover;
+  }
+  
+  
+  .slider-button {
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    background-color: var(--watermelon);
+    color: var(--whitePink);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  

@@ -16,14 +16,14 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className="nav-link">
+            <Nav.Link href="#link" className="nav-link">
               Home
             </Nav.Link>
             <Nav.Link href="#link" className="nav-link">
-              Order
+              Menu
             </Nav.Link>
             <Nav.Link href="#link" className="nav-link">
-              About
+              About Us
             </Nav.Link>
             <Nav.Link href="#link" className="nav-link">
               Review
