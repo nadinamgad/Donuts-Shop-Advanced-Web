@@ -9,6 +9,7 @@ export default function AboutUs() {
 <Container className="about-container">
     <Row className="upper-half">
         <Col className="hook">
+            About Us !<br/>
             We Serve Your One-Stop Donut Destination!
         </Col>
 
