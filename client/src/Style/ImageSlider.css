@@ -15,20 +15,24 @@
   }
   
   .mainimg {
-    width: 90%; /* Adjust the width as per your preference */
+    width: 37rem; /* Adjust the width as per your preference */
     height: auto; /* Adjust the height to match the width */
     object-fit: cover;
   }
   
   
-  .slider-button {
+  .sliders-button {
     font-family: 'Pacifico', cursive;
     font-size: 18px;
-    background-color: var(--watermelon);
-    color: var(--whitePink);
-    border: none;
+    background-color: transparent;
+    color: var(--brown);
+    border: white solid;
     padding: 10px 20px;
-    margin-top: 10px;
     cursor: pointer;
+    margin-top: 30rem;
+    border-radius: 2rem;
   }
   
+.sliders-button:hover {
+  color: var(--watermelon);
+}
