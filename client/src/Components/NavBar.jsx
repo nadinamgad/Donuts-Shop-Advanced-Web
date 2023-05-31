@@ -19,7 +19,7 @@ function NavBar() {
             <Nav.Link href={"/"} className="nav-link">
               Home
             </Nav.Link>
-            <Nav.Link href="#link" className="nav-link">
+            <Nav.Link href={"#link"} className="nav-link">
               Menu
             </Nav.Link>
             <Nav.Link href={"/aboutus"} className="nav-link">
@@ -28,7 +28,7 @@ function NavBar() {
             <Nav.Link href="#link" className="nav-link">
               Review
             </Nav.Link>
-            <Nav.Link href="#link" className="nav-link">
+            <Nav.Link href={"/contact"} className="nav-link">
               Contact
             </Nav.Link>
           </Nav>
