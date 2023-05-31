@@ -9,8 +9,12 @@ export default function AboutUs() {
 <Container className="about-container">
     <Row className="upper-half">
         <Col className="hook">
-            About Us !<br/>
-            We Serve Your One-Stop Donut Destination!
+            <h1 className="about-us">
+                ABOUT US !<br/>
+            </h1>
+            <div className="sub-hook">
+                We Serve Your One-Stop Donut Destination!
+            </div>
         </Col>
 
       <Col>
@@ -21,12 +25,16 @@ export default function AboutUs() {
 
     <Row className="lower-half">
         <Col className="lower-col1">
+            <div className="text-container">
+
             <h1 className="madeforu">
                 MADE FOR YOU
             </h1>
             <h1 className="wlove">
                 with love
             </h1>
+
+            </div>
         </Col>
 
         <Col>

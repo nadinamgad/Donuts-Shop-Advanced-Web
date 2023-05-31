@@ -1,143 +1,155 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
 
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Anton', sans-serif;
+  color: white;
+}
 
 .about-container {
-    background-image: url(../assets/pxfuel.jpg);
-    background-size: 100% 100%;
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url(../assets/pxfuel.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.about-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(11, 11, 11, 0.5), rgba(0, 0, 0, 0.8));
+  z-index: -1;
 }
 
 .upper-half {
-    padding: 2rem;
-    margin: 3rem;
-    align-items: center;
-}
-
-.side-img {
-    width: 130%;
-    height: auto;
-}
-
-.hook {
-    font-size: 300%;
-    
-    font-family: 'Lobster', cursive;
-    color: white;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 3rem;
+  align-items: center;
+  text-align: center;
 }
 
 .lower-half {
-    padding: 2rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.58);
 }
 
-.madeforu {
-    color: white;
-    font-family: 'Anton', sans-serif;
+.about-us{
+    background: linear-gradient(to bottom, #fffbfc93, #e8647a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 3.5rem;
 }
 
-.wlove {
-    font-family: 'Damion', cursive;
+.side-img {
+  width: 100%;
+  height: auto;
+}
 
+.sub-hook {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
+  color: white;
 }
 
 .lower-col1 {
+    align-items: center;
     justify-content: center;
-}
-.donutimg {
-    width: 90%;
+    background-image: url("../assets/floral.png");
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Add position relative */
+  }
+  
+  .lower-col1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background color */
+    z-index: 1;
+  }
+  
+  .lower-col1 .text-container {
+    position: relative; /* Add position relative */
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .lower-col1 h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .lower-col1 p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+
+.donutimg {
+  width: 90%;
+  height: 100%;
 }
 
 .up-img {
-    width: 100%;
-    height: 25rem;
+  width: 100%;
+  height: 25rem;
 }
-
-
 
 h1 {
-  
-    /* text-shadow: 0 0 5px #cec74a, 0 0 15px #eaee87, 0 0 20px #faed8d, 0 0 40px #fffaae, 0 0 60px #fff700, 0 0 10px #ffef73, 0 0 98px #f6ff00;
-    color: #edeb52;
-    -webkit-animation: blink 12s infinite;
-    animation: blink 12s infinite; */
-
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
 }
+
 p {
-    font-family: 'Anton', sans-serif;
-    font-size: 1.2rem;
-    background-color: #ffffff4b;
-    padding: 3rem;
-}  
+  font-size: 1.5rem;
+  font-weight: 650;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 3rem;
+  margin: 0;
+}
 
 .about-us-title {
-    background-color: white;
+  background-color: white;
+  text-align: center;
 }
 
-/* .neonText {
-    font-size: 4rem;
-    color: #fff;
-    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
-    animation: neon-glow 1.5s ease-in-out infinite alternate;
-    background: linear-gradient(45deg, #ffec00, #ff6600);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  @keyframes neon-glow {
-    from {
-      text-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
-      
-    }
-    to {
-      text-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
-      
-    }
-  } */
-  
-/* .neonText {
-    color: #494444;
-  text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #0fa,
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px #0fa,
-      0 0 151px #0fa;
+.madeforu {
+  padding: 1rem;
+  color: aliceblue;
+  font-weight: bold;
+}
 
-    font-size: 6.2rem;
-    animation: pulsate 0.11s ease-in-out infinite alternate;  
-  } */
-
-  /* @keyframes pulsate {
-    
-    100% {
-  
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px rgb(7, 15, 47),
-        0 0 80px rgb(10, 1, 116),
-        0 0 90px rgb(18, 6, 88),
-        0 0 100px rgb(4, 27, 78),
-        0 0 150px rgb(3, 14, 31);
-    
-    }
-    
-    0% {
-  
-      text-shadow:
-      0 0 4px #fff,
-      0 0 10px #fff,
-      0 0 18px #fff,
-      0 0 38px #f09,
-      0 0 73px #f09,
-      0 0 80px rgb(89, 0, 255),
-      0 0 94px rgb(13, 0, 255),
-      0 0 140px rgb(8, 0, 255);
-  
-  }
-} */
-
+.wlove {
+  font-family: 'Damion', cursive;
+  color: #faa0af;
+}
