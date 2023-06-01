@@ -10,8 +10,8 @@ body {
 }
 
 .about-container {
-  position: absolute;
-  min-height: 100%;
+  position: relative;
+  min-height: 100vh;
   min-width: 100%;
   background-image: url(../assets/pxfuel.jpg);
   background-size: cover;

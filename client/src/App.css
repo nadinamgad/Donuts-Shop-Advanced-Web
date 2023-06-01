@@ -1,0 +1,27 @@
+/* .light-mode {
+    background-image: linear-gradient(to right, rgba(58, 39, 85, 0.4), rgba(58, 39, 85, 0.2), rgba(255, 185, 185), rgb(255, 185, 185));
+  } */
+  
+  .dark-mode {
+    min-height: 100vh; 
+    background: linear-gradient(to bottom, #333333, #000000);
+    color: white;
+  }
+  
+  .dark-mode nav {
+    background: linear-gradient(to bottom, #111111, #353535 ,#6d6d6d);
+    color: white;
+  }
+  
+  .dark-mode nav .nav-link{
+    color: white;
+  }
+
+  .dark-mode nav .logo-name{
+    color: white;
+  }
+  .dark-mode button {
+    background: #222222;
+    color: white;
+  }
+  

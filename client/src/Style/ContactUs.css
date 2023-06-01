@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,300&family=Lobster&display=swap');
+
 .Container {
-    
+    min-height: 100 vh;
     background-color: #f48ca7;
     padding: 80px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
   
   .contactTitle {
