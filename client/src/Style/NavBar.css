@@ -14,10 +14,13 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.me-auto :hover {
-    color: var(--watermelon);
+.mx-auto {
+    font-size: 1.2rem;
 }
 
+.mx-auto :hover {
+    color: var(--watermelon);
+}
 
 .logo-image {
     width: 55px; /* Set the desired width */
@@ -27,4 +30,6 @@
 
 .logo-name {
     font-family: 'pacifico',cursive;
+    font-size: 1.4rem;
 }
+
