@@ -5,7 +5,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import logo from "../assets/donut shop logo transparent.png";
 import "../Style/NavBar.css";
 
-function NavBar() {
+function NavBar({ toggleMode }) {
   return (
     <Navbar bg="light" expand="lg" className="navbar-container">
       <Container>
@@ -31,6 +31,8 @@ function NavBar() {
             <Nav.Link href={"/contact"} className="nav-link">
               Contact
             </Nav.Link>
+
+            <button onClick={toggleMode}>Dark Mode</button>
           </Nav>
         </Navbar.Collapse>
       </Container>

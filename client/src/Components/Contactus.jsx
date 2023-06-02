@@ -1,5 +1,5 @@
-import React from 'react'
-import "../Style/ContactUs.css"
+import React from 'react';
+import "../Style/ContactUs.css";
 
 export default function Contactus() {
     
@@ -11,16 +11,16 @@ export default function Contactus() {
         <div className='form-container'>
         <form>
             <div className="Name">
-                <label for="firstname"> First Name </label>
+                <label htmlFor="firstname"> First Name </label>
                 <input type="text" name="firstName" className="firstName" placeholder="enter first name" tabIndex="1"/>
 
-                <label for="lastname"> Last Name </label>
+                <label htmlFor="lastname"> Last Name </label>
                 <input type="text" name="lastName" className="lastName" placeholder="enter last name" tabIndex="2"/>
 
-                <label for="email"> Email </label>
+                <label htmlFor="email"> Email </label>
                 <input type="email" name="email" className="email" placeholder="example@corp.com" tabIndex="3"/>
             
-                <label for="message"> Message </label>
+                <label htmlFor="message"> Message </label>
                 <textarea placeholder="Start typing..." className="message" name="message"/>
      
                 <button type="submit" className="send"> Send </button>
