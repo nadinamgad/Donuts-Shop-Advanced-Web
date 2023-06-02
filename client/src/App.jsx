@@ -5,6 +5,7 @@ import Layout from "./Components/Layout";
 import Home from "./Components/Home";
 import Contactus from "./Components/Contactus";
 import { useState } from "react";
+import { Login } from "./Components/Login";
 // import NavBar from './Components/NavBar.jsx';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contact" element={<Contactus/>} />
+        <Route path="/login" element={<Login/>} />
       </Route>
     </Routes>
 

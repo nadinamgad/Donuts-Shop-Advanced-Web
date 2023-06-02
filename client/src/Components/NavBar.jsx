@@ -31,6 +31,9 @@ function NavBar({ toggleMode }) {
             <Nav.Link href={"/contact"} className="nav-link">
               Contact
             </Nav.Link>
+            <Nav.Link href={"/login"} className="nav-link">
+              Login
+            </Nav.Link>
           </Nav>
 
           <Nav>
