@@ -15,7 +15,7 @@ function NavBar({ toggleMode }) {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="mx-auto">
             <Nav.Link href={"/"} className="nav-link">
               Home
             </Nav.Link>
@@ -31,8 +31,10 @@ function NavBar({ toggleMode }) {
             <Nav.Link href={"/contact"} className="nav-link">
               Contact
             </Nav.Link>
+          </Nav>
 
-            <button onClick={toggleMode}>Dark Mode</button>
+          <Nav>
+            <button onClick={toggleMode} className="dark-mode-button">Dark Mode</button>
           </Nav>
         </Navbar.Collapse>
       </Container>

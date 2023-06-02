@@ -24,4 +24,18 @@
     background: #222222;
     color: white;
   }
+
+  .dark-mode nav .nav-link:hover{
+    color: #F95D71;
+  }
   
+.dark-mode-button {
+  border-radius: 2rem;
+  padding: 7px;
+  border: transparent;
+  
+}
+
+.dark-mode-button:hover {
+  color: #F95D71;
+}

@@ -1,8 +1,16 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import "../App.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "../Style/Home.css";
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+import Particles from 'react-tsparticles';
+import particlesConfig from './ParticlesConfig'; 
 
 import slide2 from "../assets/vanilla_tower2.png";
 import slide3 from "../assets/chocolate_aesthetic_donuts-removebg-preview.png";
@@ -75,31 +83,51 @@ export default function Home() {
           </h1>
         </Col>
 
-        <Col xs="auto">
-          <button onClick={previous} className="sliders-button">
-            Previous
-          </button>
-        </Col>
-
-        <Col>
-          <div className="slider">
-            <div className="slideshow">
-              <img src={images[index]} className="mainimg" alt="slide" />
-            </div>
-          </div>
-        </Col>
-
-        <Col xs="auto">
-          <button onClick={next} className="sliders-button">
-            Next
-          </button>
-        </Col>
       </Row>
 
-      <Row>
-        <Col className="button-col">
-          <Button className="order-now">Order Now</Button>
-        </Col>
+      <Row>  
+
+        <Col className="swiper-container-wrapper">
+          <Swiper
+          effect={'coverflow'}
+          grabCursor={true}
+          centeredSlides={true}
+          loop={false}
+          slidesPerView={'auto'}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+          }}
+          pagination={{ el: '.swiper-pagination', clickable: true }}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            clickable: true,
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation]}
+          className="swiper_container"
+        >
+          <SwiperSlide className="slider-image">
+            <img src={slide2} alt="slide_image" />
+          </SwiperSlide>
+          <SwiperSlide className="slider-image">
+            <img src={slide3} alt="slide_image" />
+          </SwiperSlide>
+          
+
+          <div className="slider-controler">
+            <div className="swiper-button-prev slider-arrow" style={{ color: '#422824' }}>
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div className="swiper-button-next slider-arrow" style={{ color: '#422824' }}>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div className="swiper-pagination"></div>
+          </div>
+        </Swiper>
+      </Col>
       </Row>
     </Container>
   );
