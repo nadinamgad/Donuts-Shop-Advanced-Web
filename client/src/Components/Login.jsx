@@ -16,16 +16,15 @@ export const Login = (props) => {
         <div className="Form-conatiner">
             
             <form className="Login-form" onSubmit={handleSubmit}>
-            <h2> Login </h2>
-            <label htmlFor="email"> E-mail </label>
-            <input value ={email} type="email" placeholder="Enter email" id="email" name="email" required/>
+            <h1 className="Login"> Login </h1>
+           
+            <input value ={email} type="email" placeholder="Email" id="email" name="email" required/>
        
-            <label htmlFor="password"> Password </label>
-            <input value ={pass} type="password" placeholder="Enter password" id="pasaword" name="password" required/>
+            <input value ={pass} type="password" placeholder="Password" id="pasaword" name="password" required/>
        
             <button type="submit"> Login </button>
             
-            <button className="link-btn" onClick={() => props.onFormSwitch('register')}> Don't have an account? <b> Sign-up here. </b></button>
+            <button className="link-btn" onClick={() => props.onFormSwitch('Signup')}> Don't have an account? <b> Sign-up here. </b></button>
          </form>
 
          
