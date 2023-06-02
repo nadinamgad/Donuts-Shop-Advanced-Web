@@ -6,14 +6,16 @@
     align-items: center;
     justify-content: center;
     color: white;
-    background-image: url("C:\Users\Natalie\Donuts-Shop-Advanced-Web\client\src\assets\Donutspic.jpg");
+    background-image: url("E:\Semester 6\Advanced Web\project\Donuts\Donutspic.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Righteous', cursive;
 }
+
 .Login{
     color: black;
  }
+
 .Form-container, .Login-form {
     display: flex;
     flex-direction: column;
@@ -22,8 +24,7 @@
     border: 2px solid rgb(247, 191, 198);
     border-radius: 15px;
     box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1); ;
-    width: 100%;
-    max-width: 350px;
+    width: 60%;
     background: rgba(252, 208, 208, 0.8);
 }
 
