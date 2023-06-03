@@ -4,6 +4,7 @@ import logo from "../assets/donut shop logo transparent.png";
 import navIcon1 from "../assets/facebook.png";
 import navIcon2 from "../assets/instagram50.png";
 import navIcon3 from "../assets/email-50.png";
+import "../Style/Footer.css"
 
 export const Footer = () => {
   return (
@@ -23,7 +24,7 @@ export const Footer = () => {
             <div className="footer-items">
               <div
                 className="social-icon"
-                style={{ marginTop: "4rem", marginBottom: "2rem" }}
+                
               >
               <p>Follow us !</p>
 

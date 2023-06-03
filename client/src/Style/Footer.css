@@ -1,15 +1,7 @@
 .footer {
-    border: black solid;
-    width: 100vw;
-    box-sizing: border-box;
-    padding: 3rem 3rem 0 3rem;
-    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
 }
 
-.footer-l-col {
-    border: rgb(65, 64, 64) solid;
-}
-
-.footer-r-col {
-    border: rgb(61, 59, 59) solid;
-}
