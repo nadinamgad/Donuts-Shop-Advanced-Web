@@ -16,6 +16,7 @@ import slide2 from "../assets/vanilla_tower2.png";
 import slide3 from "../assets/chocolate_aesthetic_donuts-removebg-preview.png";
 import sprinkleImage from "../assets/pngwing.com (1).png";
 import "../Style/ImageSlider.css";
+import ParticlesComponent from "./DynamicBG";
 
 export default function Home() {
   // useEffect(() => {
@@ -129,6 +130,8 @@ export default function Home() {
         </Swiper>
       </Col>
       </Row>
+      <ParticlesComponent/>
     </Container>
+
   );
 }

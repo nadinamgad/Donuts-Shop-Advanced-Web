@@ -6,6 +6,9 @@ import Home from "./Components/Home";
 import Contactus from "./Components/Contactus";
 import { useState } from "react";
 import { Login } from "./Components/Login";
+// import DynamicBG from "./Components/DynamicBG";
+// import ParticlesBG from "./Components/ParticlesBG";
+import ParticlesComponent from "./Components/DynamicBG";
 // import NavBar from './Components/NavBar.jsx';
 
 function App() {
@@ -25,6 +28,14 @@ function App() {
         <Route path="/login" element={<Login/>} />
       </Route>
     </Routes>
+
+    // <div style={{background: "black"}} className="bg-dynamic">
+    //   <h1>hiiii</h1>
+    //   <h1>hiiii</h1>
+    //   <h1>hiiii</h1>
+      
+    //   <ParticlesComponent id="tsparticles"/>
+    // </div>
 
   );
 }
