@@ -38,7 +38,7 @@ export default function AboutUs() {
         </Col>
 
         <Col>
-        <p>Welcome to Donutopia! We are a family-owned donut shop dedicated to serving the finest quality donuts in town. And we take pride in offering a wide variety of flavors and styles to satisfy every donut lover's cravings.</p>
+        <p className="aboutus-p">Welcome to Donutopia! We are a family-owned donut shop dedicated to serving the finest quality donuts in town. And we take pride in offering a wide variety of flavors and styles to satisfy every donut lover's cravings.</p>
         </Col>
     </Row>
     </Container>

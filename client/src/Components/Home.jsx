@@ -18,6 +18,7 @@ import sprinkleImage from "../assets/pngwing.com (1).png";
 import "../Style/ImageSlider.css";
 import ParticlesComponent from "./DynamicBG";
 
+
 export default function Home() {
   // useEffect(() => {
   //   createSprinkles();
@@ -86,7 +87,7 @@ export default function Home() {
 
       </Row>
 
-      <Row>  
+      <Row style={{marginBottom:"10rem"}}>  
 
         <Col className="swiper-container-wrapper">
           <Swiper
@@ -131,6 +132,7 @@ export default function Home() {
       </Col>
       </Row>
       <ParticlesComponent/>
+      
     </Container>
 
   );

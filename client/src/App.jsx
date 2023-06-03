@@ -29,6 +29,13 @@ function App() {
       </Route>
     </Routes>
 
+    // <div>
+    //   <Layout/>
+    //   <Home/>
+    //   <AboutUs/>
+    //   <Contactus/>
+    // </div>
+
     // <div style={{background: "black"}} className="bg-dynamic">
     //   <h1>hiiii</h1>
     //   <h1>hiiii</h1>
