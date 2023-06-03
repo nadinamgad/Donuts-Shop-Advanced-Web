@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 import Particles from 'react-tsparticles';
-import particlesConfig from './ParticlesConfig'; 
+
 
 import slide2 from "../assets/vanilla_tower2.png";
 import slide3 from "../assets/chocolate_aesthetic_donuts-removebg-preview.png";
