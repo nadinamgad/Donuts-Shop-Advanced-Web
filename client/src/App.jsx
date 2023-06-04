@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import Contactus from "./Components/Contactus";
 import { useState } from "react";
 import { Login } from "./Components/Login";
+import Signup from "./Components/Signup";
 // import DynamicBG from "./Components/DynamicBG";
 // import ParticlesBG from "./Components/ParticlesBG";
 import ParticlesComponent from "./Components/DynamicBG";
@@ -25,7 +26,8 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contact" element={<Contactus/>} />
-        <Route path="/login" element={<Login/>} />
+        <Route path="/login" element={<Login/>} /> 
+        <Route path="/signup" element={<Signup/>} />
       </Route>
     </Routes>
 
