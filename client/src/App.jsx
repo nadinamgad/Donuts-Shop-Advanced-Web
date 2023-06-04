@@ -10,6 +10,8 @@ import Signup from "./Components/Signup";
 // import DynamicBG from "./Components/DynamicBG";
 // import ParticlesBG from "./Components/ParticlesBG";
 import ParticlesComponent from "./Components/DynamicBG";
+import Admin from "./Components/admin";
+import AddProductForm from "./Components/AddProductForm";
 // import NavBar from './Components/NavBar.jsx';
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
         <Route path="/contact" element={<Contactus/>} />
         <Route path="/login" element={<Login/>} /> 
         <Route path="/signup" element={<Signup/>} />
+        <Route path="/admin" element={<Admin/>} />
+        <Route path="/addproduct" element={<AddProductForm/>}/>
       </Route>
     </Routes>
 
