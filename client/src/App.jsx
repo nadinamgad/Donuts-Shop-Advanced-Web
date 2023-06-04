@@ -5,7 +5,7 @@ import Layout from "./Components/Layout";
 import Home from "./Components/Home";
 import Contactus from "./Components/Contactus";
 import { useState } from "react";
-import { Login } from "./Components/Login";
+import Login from "./Components/Login";
 import Signup from "./Components/Signup";
 // import DynamicBG from "./Components/DynamicBG";
 // import ParticlesBG from "./Components/ParticlesBG";

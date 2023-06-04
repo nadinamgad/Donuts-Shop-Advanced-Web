@@ -1,34 +1,77 @@
-import React, { useState } from "react";
-import "../Style/Login.css";
+import { useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import styles from "./styles2.module.css";
 
-export const Login = (props) => {
-    const [email, setEmail] = useState('');
-    const [pass, setPass] = useState('');
+const Login = () => {
+	const [data, setData] = useState({ email: "", password: "" });
+	const [error, setError] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(email);
-    }
+	const handleChange = ({ currentTarget: input }) => {
+		setData({ ...data, [input.name]: input.value });
+	};
 
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+            const url = "http://localhost:5001/api/users/login";
+			const { data: res } = await axios.post(url, data);
+            console.log('entered try');
+			localStorage.setItem("token", res.data);
+			window.location = "/";
+            console.log('direct to home');
+		} catch (error) {
+			if (
+				error.response &&
+				error.response.status >= 400 &&
+				error.response.status <= 500
+			) {
+				setError(error.response.data.message);
+			}
+		}
+	};
 
-    return (
-  
-        <div className="Form-conatiner">
-            
-            <form className="Login-form" onSubmit={handleSubmit}>
-            <h1 className="Login"> Login </h1>
-           
-            <input value ={email} type="email" placeholder="Email" id="email" name="email" required/>
-       
-            <input value ={pass} type="password" placeholder="Password" id="pasaword" name="password" required/>
-       
-            <button type="submit"> Login </button>
-            
-            <button className="link-btn" onClick={() => props.onFormSwitch('Signup')}> Don't have an account? <b> Sign-up here. </b></button>
-         </form>
+	return (
+		<div className={styles.login_container}>
+			<div className={styles.login_form_container}>
+				<div className={styles.left}>
+					<form className={styles.form_container} onSubmit={handleSubmit}>
+						<h1>Login to Your Account</h1>
+						<input
+							type="email"
+							placeholder="Email"
+							name="email"
+							onChange={handleChange}
+							value={data.email}
+							required
+							className={styles.input}
+						/>
+						<input
+							type="password"
+							placeholder="Password"
+							name="password"
+							onChange={handleChange}
+							value={data.password}
+							required
+							className={styles.input}
+						/>
+						{error && <div className={styles.error_msg}>{error}</div>}
+						<button type="submit" className={styles.green_btn}>
+							Sing In
+						</button>
+					</form>
+				</div>
+				<div className={styles.right}>
+					<h1>New Here ?</h1>
+					<Link to="/signup">
+						<button type="button" className={styles.white_btn}>
+							Sing Up
+						</button>
+					</Link>
+				</div>
+			</div>
+		</div>
+	);
+};
 
-         
-        </div>
-        
-    )
-}
+export default Login;
