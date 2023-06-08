@@ -21,30 +21,16 @@ const Login = () => {
 
             // Make another API request to retrieve the user's data
             const userDataUrl = "http://localhost:5001/api/users/me";
-            // const config = {
-            // headers: {
-            //     Authorization: `Bearer ${token}`, // Pass the token in the Authorization header
-            // },
-            // };
-            // const { data: userData } = await axios.get(userDataUrl, config);
-
-            // // Access the user's data
-            // console.log(userData);
-
-            // Retrieve the role from the response data
-            // const role = res.data;
-            // console.log("hi");
-            // console.log("role is:", role);
-            // // Determine the redirect path based on the user's role
-            // let redirectPath = "/";
-            // if (role === "admin") {
-            //     console.log("admin!");
-            //     redirectPath = "/admin";
-            // } else if (role === "user") {
-            //     redirectPath = "/";
-            // }
+            
 			localStorage.setItem("token", res.data);
-			window.location = '/';
+			if(data.email == "nadeen20@gmail.com")
+			{
+				window.location = '/admin';
+			}
+			else{
+
+				window.location = '/';
+			}
 		} catch (error) {
 			if (
 				error.response &&

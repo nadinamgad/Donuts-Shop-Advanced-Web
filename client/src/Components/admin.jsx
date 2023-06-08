@@ -3,10 +3,11 @@ import { useEffect, useState } from "react";
 import styles from "../Style/Admin.module.css";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import AddProductForm from "./AddProductForm";
-
+import EditProductForm from "./EditProduct";
 
 export default function Admin() {
   const [products, setProducts] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,65 +20,95 @@ export default function Admin() {
     };
 
     fetchData();
-  },);
+  }, []);
 
   const handleEdit = async (productId, updatedData) => {
-    // try {
-    //   const url = `http://localhost:5001/api/products/${productId}`;
-    //   const response = await axios.put(url, updatedData);
-    //   return response.data;
-    // } catch (error) {
-    //   throw new Error("Failed to update donut");
-    // }
-    setSelectedProduct(product);
+    try {
+      const url = `http://localhost:5001/api/products/${productId}`;
+      const response = await axios.put(url, updatedData);
+      const updatedProduct = response.data;
+      setProducts((prevProducts) => {
+        const updatedProducts = prevProducts.map((product) => {
+          if (product._id === updatedProduct._id) {
+            return updatedProduct;
+          }
+          return product;
+        });
+        return updatedProducts;
+      });
+    } catch (error) {
+      throw new Error("Failed to update product");
+    }
   };
-  
+
   const handleDelete = async (productId) => {
     try {
       const url = `http://localhost:5001/api/products/${productId}`;
-      const response = await axios.delete(url);
-      return response.data;
+      await axios.delete(url);
+      setProducts((prevProducts) =>
+        prevProducts.filter((product) => product._id !== productId)
+      );
     } catch (error) {
-      throw new Error("Failed to delete donut");
+      throw new Error("Failed to delete product");
     }
-
   };
 
   const handleAddProduct = () => {
-    window.location = '/addproduct';
+    window.location = "/addproduct";
   };
 
+  const handleEditIconClick = (product) => {
+    setSelectedProduct(product);
+  };
+
+  const handleCancelEdit = () => {
+    setSelectedProduct(null);
+  };
+
+  const handleUpdate = (updatedData) => {
+    handleEdit(selectedProduct._id, updatedData);
+    setSelectedProduct(null);
+  };
 
   return (
     <div className={styles.adminContainer}>
-        <div>
-      <h1>Admin Page</h1>
-
-      <button onClick={handleAddProduct}>Add New Product</button>
-
-        </div>
+      <div>
+        <button className="addproductbutton2" onClick={handleAddProduct}>
+          Add New Product
+        </button>
+      </div>
       <div className={styles.productsContainer}>
         {products.map((product) => (
           <div key={product._id} className={styles.productItem}>
-            <h2>{product.name}</h2>
-            <p>{product.category}</p>
-            <p>{product.price}</p>
-            <p>{product.description}</p>
-            <img
-              src={product.image}
-              alt={product.name}
-              className={styles.productImage}
-            />
-            <div className={styles.iconsContainer}>
-              <FaEdit
-                className={styles.editIcon}
-                onClick={() => handleEdit(product._id)}
+            {selectedProduct && selectedProduct._id === product._id ? (
+              <EditProductForm
+                product={selectedProduct}
+                onCancel={handleCancelEdit}
+                onUpdate={handleUpdate}
               />
-              <FaTrash
-                className={styles.deleteIcon}
-                onClick={() => handleDelete(product._id)}
-              />
-            </div>
+            ) : (
+              <>
+                <h2>{product.name}</h2>
+                <p>{product.category}</p>
+                <p>{product.price}</p>
+                <p>{product.description}</p>
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className={styles.productImage}
+                />
+                <div className={styles.iconsContainer}>
+                  <FaEdit
+                    className={styles.editIcon}
+                    onClick={() => handleEditIconClick(product)}
+                  />
+                  <FaTrash
+                    className={styles.deleteIcon}
+                    onClick={() => handleDelete(product._id)}
+                  />
+                </div>
+              </>
+            )}
           </div>
         ))}
       </div>

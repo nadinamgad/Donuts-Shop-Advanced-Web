@@ -1,0 +1,320 @@
+.panel-rating{
+    background-color:hsl(213,19%,13%);
+    padding: 30px;
+    border-radius: 50px;
+    width: 600px;
+    height: 650px;
+   position: relative;
+   bottom: 17em;
+   left: 52rem;
+   padding-right: 40px;
+   /* background-image: url('/src/assets/donut1'); */
+   /* backdrop-filter: blur(10px); */
+   margin-top: 450px;
+   margin-bottom: 100px;
+
+  
+}
+.panel-rating:hover{
+    box-shadow: 0 0 5px rgb(63, 10, 63),
+     0 0 25px rgb(63, 10, 63),
+     0 0 50px rgb(63, 10, 63),
+     0 0 100px rgb(63, 10, 63),
+     0 0 200px rgb(63, 10, 63);
+}
+
+.thankyoupanel-rating{
+    background-color:hsl(213,19%,13%);
+    padding: 40px;
+    border-radius: 50px;
+    width: 600px;
+    height: 650px;
+   position: relative;
+   bottom: 17em;
+   left: 52rem;
+   padding-right: 40px;
+   text-align: center;
+   /* background-image: url('/src/assets/purple dressing'); */
+   /* backdrop-filter: blur(10px); */
+   margin-top: 450px;
+   margin-bottom: 100px;
+   
+}
+
+.thankyoupanel-rating:hover{
+    box-shadow: 0 0 5px rgb(71, 21, 142),
+     0 0 25px rgb(71, 21, 142),
+     0 0 50px rgb(71, 21, 142),
+     0 0 100px rgb(71, 21, 142),
+     0 0 200px rgb(71, 21, 142);
+
+}
+.selected-rating{
+    color:rgb(120, 42, 112);
+    margin: 2rem 1rem 0;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.2rem;
+    font-size: 20px;
+    border-radius: 40px;  
+    background-color:hsl(212, 21%, 69%); 
+    padding: 10px;
+   
+}
+
+.star-rating{
+    width: 13%;
+    height: 11%;
+    background: hsl(213,19%,44%);
+    border-radius: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+}
+.title-rating{
+    color:white;
+    margin: 2rem 1rem 0;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.3rem;
+    font-size: 62px;
+    
+}
+.description-rating{
+    color: #8e949e;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    position: relative;
+    bottom: -2em;
+   
+}
+.group-rating{
+    display: flex;
+    justify-content: space-between ;
+    margin-bottom: 25px;
+}
+.rating-rating{
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: hsl(211, 19%,30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(211, 19%,63%);
+    font-weight: 800;
+    cursor: pointer;
+    margin-bottom: 40px;
+    position: relative;
+    bottom: -4em;
+}
+.rating-rating:hover{
+    background-color: hsl(212, 21%, 69%);
+    color: white;
+}
+.rating-rating:focus{
+    
+    background-color:rgb(175, 84, 175);
+    
+}
+.comment-rating{
+    color:rgb(227, 140, 218);
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.3rem;
+    font-size: 40px;
+    position: relative;
+    top: -1rem;
+    left: 2rem;
+}
+
+.heart-rating{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left: 18rem;
+    top: -11rem;
+   width: 70px;
+   height: 70px;
+}
+.textarea-rating{
+    position: relative;
+    top: -1rem;
+    width: 450px;
+    margin-bottom: 10px;
+}
+.submit-rating{
+   position: relative;
+   bottom: -12rem;
+    width: 100%;
+    padding-left: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    border-radius: 40px;
+    background-color:rgb(68, 14, 68) ;
+    color: white;
+    font-family:inherit;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+
+}
+.submit-rating:focus{
+    background-color: hsl(212, 21%, 69%);
+}
+
+.submit-rating:hover{
+    background-color: white;
+    color: rgb(68, 14, 68);
+}
+.maincontainor-rating{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+.comment_flexbox-rating{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.comment_containor-rating{
+  
+   display: flex;
+   flex-direction: coulmn;
+   width: 430px;
+    height: 70px;
+    background-color: white;
+    border-radius: 5px;
+    word-break: break-all;
+}
+
+
+.btn2-rating{
+    position: relative;
+    left: 14rem;
+    bottom: 10.8rem;
+    width: 200px;
+    padding-left: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    border-radius: 40px;
+    background-color:rgb(68, 14, 68) ;
+    color: white;
+    font-family:inherit;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+
+}
+
+.btn2-rating:focus{
+    background-color: hsl(212, 21%, 69%);
+}
+
+.btn2-rating:hover{
+    background-color: white;
+    color: rgb(68, 14, 68);
+}
+
+
+
+
+
+
+
+
+/* 
+.star-img-containor{
+width: 45px;
+height: 45px;
+background-color: hsl(211, 19%,20%);
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.icon{
+    width: 50%;
+    height: 50%;
+}
+.title{
+    color:white;
+    margin: 2rem 1rem 0;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.3rem;
+}
+.text{
+    color: hsl(211, 19%,63%);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+.ratings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.ratings-containor{
+    text-align: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: hsl(211, 19%,30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(211, 19%,63%);
+    font-weight: 700;
+}
+.ratings-containor.active{
+    color: white;
+    background-color: hsl(212, 91%, 9%);
+
+}
+.ratings-containor:hover{
+    background-color:rgb(175, 84, 175);
+    color: white;
+
+}
+.submit_btn{
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 12px 0;
+    background-color: rgb(175, 84, 175);
+    color: white;
+    border-radius: 25px;
+    letter-spacing:1.5px ;
+    font-family: inherit;
+    font-weight: 700;
+    position: relative;
+    font-size: 1.2rem;
+
+}
+.submit_btn.active{
+background-color: white;
+color:rgb(37, 2, 37) ;
+
+
+}
+.submit_btn:hover{
+    background-color: white;
+    color:rgb(175, 84, 175) ;
+    
+    
+    } */

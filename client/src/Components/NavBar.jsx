@@ -19,13 +19,13 @@ function NavBar({ toggleMode }) {
             <Nav.Link href={"/"} className="nav-link">
               Home
             </Nav.Link>
-            <Nav.Link href={"#link"} className="nav-link">
+            <Nav.Link href={"/menu"} className="nav-link">
               Menu
             </Nav.Link>
             <Nav.Link href={"/aboutus"} className="nav-link">
               About Us
             </Nav.Link>
-            <Nav.Link href="#link" className="nav-link">
+            <Nav.Link href="/review" className="nav-link">
               Review
             </Nav.Link>
             <Nav.Link href={"/contact"} className="nav-link">

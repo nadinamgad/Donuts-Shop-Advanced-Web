@@ -1,0 +1,63 @@
+.menuTitle {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Your Font", sans-serif;
+    /* Add any other custom styles */
+  }
+  
+  .itemGrid {
+    margin-top: 20px;
+  }
+  
+  .itemContainer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .itemTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Your Font", sans-serif;
+    /* Add any other custom styles */
+  }
+  
+  .itemCategory {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: "Your Font", sans-serif;
+    /* Add any other custom styles */
+  }
+  
+  .itemPrice {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: "Your Font", sans-serif;
+    /* Add any other custom styles */
+  }
+  
+  .itemDescription {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: "Your Font", sans-serif;
+    /* Add any other custom styles */
+  }
+  
+  .itemImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .buttonContainer {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .addButton {
+    font-family: "Your Font", sans-serif;
+    /* Add any other custom styles */
+  }
+  

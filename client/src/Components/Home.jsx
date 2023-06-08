@@ -71,7 +71,7 @@ export default function Home() {
         </Col>
       </Row> */}
 
-      <Row className="text-row">
+      <Row className="text-row" style={{textAlign: "center"}}>
         <Col>
           <h1>
             <span className="el_tetr" id="gradient-text">

@@ -12,6 +12,8 @@ import Signup from "./Components/Signup";
 import ParticlesComponent from "./Components/DynamicBG";
 import Admin from "./Components/admin";
 import AddProductForm from "./Components/AddProductForm";
+import Menu from "./Components/Menu";
+import ReviewPage from "./Components/ReviewPage";
 // import NavBar from './Components/NavBar.jsx';
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
         <Route path="/signup" element={<Signup/>} />
         <Route path="/admin" element={<Admin/>} />
         <Route path="/addproduct" element={<AddProductForm/>}/>
+        <Route path="/menu" element={<Menu/>} />
+        <Route path="/review" element={<ReviewPage />} />
       </Route>
     </Routes>
 
