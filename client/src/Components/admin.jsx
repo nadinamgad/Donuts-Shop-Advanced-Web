@@ -12,7 +12,7 @@ export default function Admin() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5001/api/products");
+        const response = await axios.get("http://localhost:5001/api/products/getdonuts");
         setProducts(response.data);
       } catch (error) {
         console.log("Error fetching products:", error);
@@ -24,7 +24,7 @@ export default function Admin() {
 
   const handleEdit = async (productId, updatedData) => {
     try {
-      const url = `http://localhost:5001/api/products/${productId}`;
+      const url = `http://localhost:5001/api/products/updateproduct/${productId}`;
       const response = await axios.put(url, updatedData);
       const updatedProduct = response.data;
       setProducts((prevProducts) => {
@@ -43,7 +43,7 @@ export default function Admin() {
 
   const handleDelete = async (productId) => {
     try {
-      const url = `http://localhost:5001/api/products/${productId}`;
+      const url = `http://localhost:5001/api/products/deleteproduct/${productId}`;
       await axios.delete(url);
       setProducts((prevProducts) =>
         prevProducts.filter((product) => product._id !== productId)
@@ -66,6 +66,7 @@ export default function Admin() {
   };
 
   const handleUpdate = (updatedData) => {
+    console.log(selectedProduct._id);
     handleEdit(selectedProduct._id, updatedData);
     setSelectedProduct(null);
   };

@@ -19,7 +19,7 @@ const AddProductForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:5001/api/products";
+      const url = "http://localhost:5001/api/products/addproduct";
       const response = await axios.post(url, formData);
       console.log("added successfully!");
       window.location = "/admin";
